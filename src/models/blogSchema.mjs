@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const blogSchema = new mongoose.Schema(
   {
@@ -14,7 +14,7 @@ const blogSchema = new mongoose.Schema(
     likes: { type: Number, default: 0 },
     views: { type: Number, default: 0 },
     // featuredImage: { type: String },
-    excerpt: { type: String },
+    //excerpt: { type: String },
   },
   { timestamps: true }
 );
